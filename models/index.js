@@ -6,7 +6,9 @@ const sequelize = new Sequelize(dbConfig.database.name, dbConfig.database.user, 
   port: dbConfig.database.port,
   dialect: dbConfig.database.dialect,
   operatorsAliases: '0',
-
+  define: {
+    freezeTableName: true
+  },
   pool: {
     max: dbConfig.database.pool.max,
     min: dbConfig.database.pool.min,

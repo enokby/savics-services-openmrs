@@ -1,5 +1,5 @@
 var base = require('../../app');
-var Provider = require('../../models/gmao/provider');
+var Provider = require('../../models').providers;
 
 base.app.post('/provider', function (req, res) {   
     try {

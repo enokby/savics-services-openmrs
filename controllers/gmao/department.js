@@ -1,5 +1,5 @@
 var base = require('../../app');
-var Department = require('../../models/gmao/department');
+var Department = require('../../models').departments;
 
 base.app.post('/department', function (req, res) {   
     try {
@@ -39,6 +39,7 @@ base.app.get('/department/:id', function (req, res) {
 });
 
 base.app.get('/departments', function (req, res) {
+    console.log(Department);
     try {
         Department.findAndCountAll({
             where: {},

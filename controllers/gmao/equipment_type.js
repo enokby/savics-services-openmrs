@@ -1,5 +1,5 @@
 var base = require('../../app');
-var EquipmentType = require('../../models/gmao/equipment_type');
+var EquipmentType = require('../../models').equipmentTypes;
 
 base.app.post('/equipmentType', function (req, res) {   
     try {
