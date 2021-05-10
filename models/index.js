@@ -6,6 +6,7 @@ const sequelize = new Sequelize(dbConfig.database.name, dbConfig.database.user, 
   port: dbConfig.database.port,
   dialect: dbConfig.database.dialect,
   operatorsAliases: '0',
+  //logging: false,
   define: {
     freezeTableName: true
   },
