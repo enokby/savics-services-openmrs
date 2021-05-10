@@ -20,9 +20,10 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.equipments = require("./gmao/equipment")(sequelize, Sequelize);
+//the order of tables is very important for fks to be created
 db.equipmentTypes = require("./gmao/equipment_type")(sequelize, Sequelize);
 db.departments = require("./gmao/department")(sequelize, Sequelize);
 db.providers = require("./gmao/provider")(sequelize, Sequelize);
+db.equipments = require("./gmao/equipment")(sequelize, Sequelize);
 
 module.exports = db;
