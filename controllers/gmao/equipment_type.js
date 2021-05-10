@@ -48,7 +48,7 @@ base.app.get('/equipmentTypes', function (req, res) {
             res.status(200).send(data);
         }).catch(err => {
             res.status(500).send({error: err});
-        });;
+        });
     } catch(err) {
         console.error(err);
         res.status(500).send({error: err});
