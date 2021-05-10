@@ -6,7 +6,7 @@ base.app.post('/equipmentType', function (req, res) {
         const o = req.body;
         if(req.body.equipment_type_id){ //update
             EquipmentType.update(o, {
-                where: { equipment_type_id: req.body.equipment_type_id}
+                where: { equipment_type_id: req.body.equipment_type_id }
               }).then(data => {
                 res.status(200).send(data);
             }).catch(err => {
