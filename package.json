@@ -1,0 +1,19 @@
+{
+  "name": "savics.services.openmrs",
+  "version": "1.0.0",
+  "description": "services rest pour openmrs par savics srl",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed K. KONE",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "uuid": "^8.3.2"
+  }
+}
